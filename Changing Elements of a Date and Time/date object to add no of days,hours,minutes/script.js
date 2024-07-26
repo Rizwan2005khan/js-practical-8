@@ -1,8 +1,8 @@
 let currentDate = new Date();
 
-let type = prompt("Enter the type of modification (days, hours, or minutes):");
+let type = prompt("Enter the type of modification");
 
-let amount = parseInt(prompt("Enter the amount to add or subtract (for subtraction use negative numbers):"));
+let amount = parseInt(prompt("Enter the amount to add or subtract"));
 
 if (type === 'days') {
     currentDate.setDate(currentDate.getDate() + amount);
@@ -14,4 +14,4 @@ if (type === 'days') {
     console.log("Invalid type specified. Please use 'days', 'hours', or 'minutes'.");
 }
 
-console.log("The new date and time is: " + currentDate);
+console.log(currentDate);
